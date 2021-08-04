@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 400;
+  line-height: 1.6;
+  border: 2rem solid #eee;
+  min-height: 100vh;
+}
+
+.header-primary {
+  font-size: 10rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #eee;
+  text-align: center;
+}
+
+.container {
+  height: 90vh;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.header__background {
+  height: 100%;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 165, 0, 0.7)), to(rgba(255, 0, 0, 0.7))), url("img/img02.jpg");
+  background-image: linear-gradient(to bottom right, rgba(255, 165, 0, 0.7), rgba(255, 0, 0, 0.7)), url("img/img02.jpg");
+  background-size: cover;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.header__title-box {
+  position: absolute;
+}
+/*# sourceMappingURL=style.css.map */
