@@ -143,6 +143,15 @@ body {
   text-align: right;
 }
 
+.form__height--input::-webkit-outer-spin-button, .form__height--input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.form__height--input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 .form__weight {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -158,6 +167,15 @@ body {
 
 .form__weight--input {
   text-align: right;
+}
+
+.form__weight--input::-webkit-outer-spin-button, .form__weight--input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.form__weight--input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 .result {
