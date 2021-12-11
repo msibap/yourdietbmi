@@ -20,24 +20,31 @@
   background: rgba($color-light, 0.6);
   border-radius: 20px;
 
-  &__height {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  &__header {
+    background: $color-light;
+    border-radius: 4px;
+    padding: 0.5rem 3rem;
+    cursor: default;
   }
 
-  &__weight {
+  &__container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
+    margin: 1rem;
   }
 
   &__label {
+    font-size: 2.2rem;
   }
 
   &__input {
+    width: 25rem;
+    font-family: inherit;
+    font-size: 1.9rem;
+    font-weight: inherit;
     text-align: right;
-    border: none;
+    border: transparent 4px solid;
     border-radius: 6px;
     padding: 1rem 2rem;
     background: rgba($color-light, 0.6);
@@ -56,15 +63,24 @@
     &:focus {
       background: rgba($color-light, 1);
       outline: none;
+      border: $color-primary 4px solid;
     }
   }
 }
 
 .result {
-  min-width: 20rem;
+  min-width: 25rem;
+  min-height: 7rem;
   background: $color-light;
   margin: 2rem;
   padding: 0.5rem 2rem;
   border-radius: 8px;
   text-align: center;
+}
+
+.btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }

@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Yekan;
+  src: url("font/Yekan.woff"), url("font/Yekan.woff");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -30,71 +35,33 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: Yekan;
   font-size: 3rem;
-  font-weight: 400;
-  line-height: 1.6;
+  font-weight: 700;
+  line-height: 2;
   min-height: 100vh;
 }
 
-.header-primary {
-  font-size: 10rem;
-  font-weight: 400;
-  line-height: 1.6;
-  color: #eee;
-  text-align: center;
-}
-
 .btn {
-  width: 20rem;
-  height: 4rem;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  min-height: 4rem;
   border: none;
+  font-family: inherit;
+  font-size: 1.9rem;
   background: #fff;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   border-radius: 6px;
+  margin: 0.5rem 1rem;
+  padding: 1rem 2rem;
 }
 
 .btn:hover {
   background: #5e9900;
   color: #fff;
   cursor: pointer;
-}
-
-.container {
-  height: 90vh;
-}
-
-.header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%;
-  width: 100%;
-  position: relative;
-}
-
-.header__background {
-  height: 100%;
-  width: 100%;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(157, 255, 0, 0.7)), to(rgba(255, 0, 0, 0.7))), url("img/img02.jpg");
-  background-image: linear-gradient(to bottom right, rgba(157, 255, 0, 0.7), rgba(255, 0, 0, 0.7)), url("img/img02.jpg");
-  background-size: cover;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-}
-
-.header__title-box {
-  position: absolute;
 }
 
 .background {
@@ -126,20 +93,14 @@ body {
   border-radius: 20px;
 }
 
-.form__height {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.form__header {
+  background: #fff;
+  border-radius: 4px;
+  padding: 0.5rem 3rem;
+  cursor: default;
 }
 
-.form__weight {
+.form__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -147,14 +108,23 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 1rem;
+}
+
+.form__label {
+  font-size: 2.2rem;
 }
 
 .form__input {
+  width: 25rem;
+  font-family: inherit;
+  font-size: 1.9rem;
+  font-weight: inherit;
   text-align: right;
-  border: none;
+  border: transparent 4px solid;
   border-radius: 6px;
   padding: 1rem 2rem;
   background: rgba(255, 255, 255, 0.6);
@@ -174,14 +144,32 @@ body {
 .form__input:hover, .form__input:focus {
   background: white;
   outline: none;
+  border: #9dff00 4px solid;
 }
 
 .result {
-  min-width: 20rem;
+  min-width: 25rem;
+  min-height: 7rem;
   background: #fff;
   margin: 2rem;
   padding: 0.5rem 2rem;
   border-radius: 8px;
   text-align: center;
+}
+
+.btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */
