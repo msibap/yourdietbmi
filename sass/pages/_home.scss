@@ -43,21 +43,6 @@
   }
 }
 
-.btn {
-  width: 20rem;
-  height: 4rem;
-  border: none;
-  background: $color-light;
-  transition: all 0.2s ease-out;
-  border-radius: 6px;
-
-  &:hover {
-    background: $color-primary-dark;
-    color: $color-light;
-    cursor: pointer;
-  }
-}
-
 .result {
   min-width: 20rem;
   background: $color-light;

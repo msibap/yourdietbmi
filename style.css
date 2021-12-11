@@ -44,6 +44,22 @@ body {
   text-align: center;
 }
 
+.btn {
+  width: 20rem;
+  height: 4rem;
+  border: none;
+  background: #fff;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  border-radius: 6px;
+}
+
+.btn:hover {
+  background: #5e9900;
+  color: #fff;
+  cursor: pointer;
+}
+
 .container {
   height: 90vh;
 }
@@ -142,22 +158,6 @@ body {
 
 .form__weight--input {
   text-align: right;
-}
-
-.btn {
-  width: 20rem;
-  height: 4rem;
-  border: none;
-  background: #fff;
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-  border-radius: 6px;
-}
-
-.btn:hover {
-  background: #5e9900;
-  color: #fff;
-  cursor: pointer;
 }
 
 .result {
