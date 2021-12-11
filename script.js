@@ -16,7 +16,7 @@ const bmiCalculate = function (x, y) {
 const refresh = function () {
   height.value = "";
   weight.value = "";
-  result.textContent = "Result Here!";
+  result.textContent = "";
 };
 
 // Calculate Button
