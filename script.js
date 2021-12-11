@@ -12,6 +12,13 @@ const bmiCalculate = function (x, y) {
   console.log(result.textContent);
 };
 
+// Refreshes the values
+const refresh = function () {
+  height.value = "";
+  weight.value = "";
+  result.textContent = "Result Here!";
+};
+
 // Calculate Button
 btnCalculate.addEventListener("click", function () {
   bmiCalculate(weight.value, height.value);
@@ -19,7 +26,14 @@ btnCalculate.addEventListener("click", function () {
 
 // Refresh Button
 btnRefresh.addEventListener("click", function () {
-  height.value = "";
-  weight.value = "";
-  result.textContent = "Result Here!";
+  refresh();
+});
+
+// Keyboard buttons
+document.addEventListener("keydown", function (e) {
+  if (e.key == "Enter") {
+    bmiCalculate(weight.value, height.value);
+  } else if (e.key == "Escape") {
+    refresh();
+  }
 });
