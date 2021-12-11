@@ -24,37 +24,38 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    &--label {
-    }
-    &--input {
-      text-align: right;
-      &::-webkit-outer-spin-button,
-      &::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-      }
-      &[type="number"] {
-        -moz-appearance: textfield;
-      }
-    }
   }
 
   &__weight {
     display: flex;
     flex-direction: column;
     align-items: center;
-    &--label {
+  }
+
+  &__label {
+  }
+
+  &__input {
+    text-align: right;
+    border: none;
+    border-radius: 6px;
+    padding: 1rem 2rem;
+    background: rgba($color-light, 0.6);
+    transition: all 0.2s;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
     }
-    &--input {
-      text-align: right;
-      &::-webkit-outer-spin-button,
-      &::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-      }
-      &[type="number"] {
-        -moz-appearance: textfield;
-      }
+    &[type="number"] {
+      -moz-appearance: textfield;
+    }
+
+    &:hover,
+    &:focus {
+      background: rgba($color-light, 1);
+      outline: none;
     }
   }
 }

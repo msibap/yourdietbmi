@@ -139,19 +139,6 @@ body {
           align-items: center;
 }
 
-.form__height--input {
-  text-align: right;
-}
-
-.form__height--input::-webkit-outer-spin-button, .form__height--input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.form__height--input[type="number"] {
-  -moz-appearance: textfield;
-}
-
 .form__weight {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -165,17 +152,28 @@ body {
           align-items: center;
 }
 
-.form__weight--input {
+.form__input {
   text-align: right;
+  border: none;
+  border-radius: 6px;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.6);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
-.form__weight--input::-webkit-outer-spin-button, .form__weight--input::-webkit-inner-spin-button {
+.form__input::-webkit-outer-spin-button, .form__input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.form__weight--input[type="number"] {
+.form__input[type="number"] {
   -moz-appearance: textfield;
+}
+
+.form__input:hover, .form__input:focus {
+  background: white;
+  outline: none;
 }
 
 .result {
