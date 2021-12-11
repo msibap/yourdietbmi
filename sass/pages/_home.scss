@@ -1,0 +1,68 @@
+.background {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background: linear-gradient(
+    to top left,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  z-index: -50;
+}
+
+.form {
+  height: 90vh;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba($color-light, 0.6);
+  border-radius: 20px;
+
+  &__height {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &--label {
+    }
+    &--input {
+      text-align: right;
+    }
+  }
+
+  &__weight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &--label {
+    }
+    &--input {
+      text-align: right;
+    }
+  }
+}
+
+.btn {
+  width: 20rem;
+  height: 4rem;
+  border: none;
+  background: $color-light;
+  transition: all 0.2s ease-out;
+  border-radius: 6px;
+
+  &:hover {
+    background: $color-primary-dark;
+    color: $color-light;
+    cursor: pointer;
+  }
+}
+
+.result {
+  min-width: 20rem;
+  background: $color-light;
+  margin: 2rem;
+  padding: 0.5rem 2rem;
+  border-radius: 8px;
+  text-align: center;
+}

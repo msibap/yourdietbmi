@@ -24,12 +24,15 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 3rem;
   font-weight: 400;
   line-height: 1.6;
-  border: 2rem solid #eee;
   min-height: 100vh;
 }
 
@@ -67,8 +70,8 @@ body {
 .header__background {
   height: 100%;
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 165, 0, 0.7)), to(rgba(255, 0, 0, 0.7))), url("img/img02.jpg");
-  background-image: linear-gradient(to bottom right, rgba(255, 165, 0, 0.7), rgba(255, 0, 0, 0.7)), url("img/img02.jpg");
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(157, 255, 0, 0.7)), to(rgba(255, 0, 0, 0.7))), url("img/img02.jpg");
+  background-image: linear-gradient(to bottom right, rgba(157, 255, 0, 0.7), rgba(255, 0, 0, 0.7)), url("img/img02.jpg");
   background-size: cover;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
           clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
@@ -76,5 +79,93 @@ body {
 
 .header__title-box {
   position: absolute;
+}
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background: -webkit-gradient(linear, right bottom, left top, from(#c4ff66), to(#5e9900));
+  background: linear-gradient(to top left, #c4ff66, #5e9900);
+  z-index: -50;
+}
+
+.form {
+  height: 90vh;
+  width: 60vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+}
+
+.form__height {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form__height--input {
+  text-align: right;
+}
+
+.form__weight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form__weight--input {
+  text-align: right;
+}
+
+.btn {
+  width: 20rem;
+  height: 4rem;
+  border: none;
+  background: #fff;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  border-radius: 6px;
+}
+
+.btn:hover {
+  background: #5e9900;
+  color: #fff;
+  cursor: pointer;
+}
+
+.result {
+  min-width: 20rem;
+  background: #fff;
+  margin: 2rem;
+  padding: 0.5rem 2rem;
+  border-radius: 8px;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

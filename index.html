@@ -5,20 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>AVI-SHOP</title>
+    <title>BMI</title>
   </head>
 
   <body>
-    <div class="container">
-      <header class="header">
-        <div class="header__background"></div>
-        <div class="header__title-box">
-          <h1 class="header-primary">تست</h1>
-        </div>
-      </header>
-    </div>
-    <div class="contents">
-      <main class=""></main>
+    <div class="background"></div>
+    <div class="form">
+      <button class="btn refresh">Refresh!</button>
+      <div class="form__height">
+        <label for="form__height" class="form__height--label"
+          >Enter your height</label
+        >
+        <input
+          type="text"
+          class="form__height--input"
+          id="form__height"
+          placeholder="test"
+          value=""
+        />
+      </div>
+      <div class="form__weight">
+        <label for="form__weight" class="form__weight--label"
+          >Enter your weight</label
+        >
+        <input
+          type="text"
+          class="form__weight--input"
+          id="form__weight"
+          placeholder="test"
+          value=""
+        />
+      </div>
+      <div class="result">Result Here!</div>
+      <button class="btn calculate">Calculate</button>
     </div>
   </body>
+
+  <script src="script.js"></script>
 </html>
