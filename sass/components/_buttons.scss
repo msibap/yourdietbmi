@@ -1,14 +1,26 @@
+.btns {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media only screen and (max-width: $bp-large) {
+    flex-direction: column;
+  }
+}
+
 .btn {
   min-width: max-content;
-  min-height: 4rem;
+  height: 4rem;
   border: none;
   font-family: inherit;
   font-size: 1.9rem;
   background: $color-light;
-  transition: all 0.2s ease-out;
   border-radius: 6px;
-  margin: 0.5rem 1rem;
   padding: 1rem 2rem;
+  transition: all 0.2s ease-out;
+  margin: 1rem 0;
+  @include flex-center;
 
   &:hover {
     background: $color-primary-dark;

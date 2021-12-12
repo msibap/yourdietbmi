@@ -1,86 +1,78 @@
-.background {
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  background: linear-gradient(
-    to top left,
-    $color-primary-light,
-    $color-primary-dark
-  );
-  z-index: -50;
-}
-
 .form {
-  height: 90vh;
-  width: 60vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 60%;
+  height: 90%;
   background: rgba($color-light, 0.6);
-  border-radius: 20px;
+  border-radius: 10px;
+  padding: 3rem;
 
-  &__header {
-    background: $color-light;
-    border-radius: 4px;
-    padding: 0.5rem 3rem;
-    cursor: default;
+  @include flex-center;
+
+  @media only screen and (max-width: $bp-large) {
+    width: 100%;
+    height: 100%;
   }
 
-  &__container {
-    display: flex;
+  &__items {
+    // background-color: red;
     flex-direction: column;
-    align-items: flex-end;
-    margin: 1rem;
-  }
+    @include flex-center;
 
-  &__label {
-    font-size: 2.2rem;
-  }
-
-  &__input {
-    width: 25rem;
-    font-family: inherit;
-    font-size: 1.9rem;
-    font-weight: inherit;
-    text-align: right;
-    border: transparent 4px solid;
-    border-radius: 6px;
-    padding: 1rem 2rem;
-    background: rgba($color-light, 0.6);
-    transition: all 0.2s;
-
-    &::-webkit-outer-spin-button,
-    &::-webkit-inner-spin-button {
-      -webkit-appearance: none;
-      margin: 0;
-    }
-    &[type="number"] {
-      -moz-appearance: textfield;
+    &--header {
+      min-width: max-content;
+      background: $color-light;
+      border-radius: 4px;
+      padding: 0.5rem 3rem;
+      cursor: default;
     }
 
-    &:hover,
-    &:focus {
-      background: rgba($color-light, 1);
-      outline: none;
-      border: $color-primary 4px solid;
+    &--container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    &--label {
+      font-size: 2.2rem;
+    }
+
+    &--input {
+      width: 25rem;
+      font-family: inherit;
+      font-size: 1.9rem;
+      font-weight: inherit;
+      text-align: right;
+      border: transparent 4px solid;
+      border-radius: 6px;
+      padding: 1rem 2rem;
+      margin: 1rem 0;
+      background: rgba($color-light, 0.6);
+      transition: all 0.2s;
+
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      &[type="number"] {
+        -moz-appearance: textfield;
+      }
+
+      &:hover,
+      &:focus {
+        background: rgba($color-light, 1);
+        outline: none;
+        border: $color-primary 4px solid;
+      }
     }
   }
 }
 
 .result {
-  min-width: 25rem;
-  min-height: 7rem;
+  width: 25rem;
+  height: 7rem;
   background: $color-light;
-  margin: 2rem;
   padding: 0.5rem 2rem;
   border-radius: 8px;
   text-align: center;
-}
-
-.btns {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  margin: 1rem 0;
 }

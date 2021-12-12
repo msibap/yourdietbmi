@@ -15,13 +15,17 @@ html {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   font-family: Yekan;
   font-size: 3rem;
   font-weight: 700;
   line-height: 2;
-  min-height: 100vh;
+  height: 100vh;
+  background: linear-gradient(
+    to top left,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  background-repeat: no-repeat;
+
+  @include flex-center;
 }
