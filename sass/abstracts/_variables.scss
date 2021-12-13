@@ -6,7 +6,11 @@ $color-secondary: #ff0000;
 $color-secondary-light: lighten($color-secondary, 10%);
 $color-secondary-dark: darken($color-secondary, 10%);
 
+$color-invalid: #ffa500;
+$color-valid: #9dff00;
+
 $color-grey: #eee;
 $color-light: #fff;
 
-$bp-large: 37.5em;
+$bp-large: 48em; // 768 / 16 = 48
+$bp-medium: 37.5em; // 600 / 16 = 37.5
