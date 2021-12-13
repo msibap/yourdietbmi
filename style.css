@@ -148,11 +148,11 @@ body {
 
 .form__items--header {
   width: 100%;
-  font-family: "Balsamiq Sans", cursive;
-  font-size: 2.3rem;
   min-width: -webkit-max-content;
   min-width: -moz-max-content;
   min-width: max-content;
+  font-family: "Balsamiq Sans", cursive;
+  font-size: 2.3rem;
   background: #fff;
   border-radius: 4px;
   padding: 0.5rem 3rem;
