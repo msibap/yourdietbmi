@@ -10,6 +10,7 @@
 }
 
 html {
+  overflow: visible;
   box-sizing: border-box;
   font-size: 62.5%; // 1rem = 10px (10px/16px = 62.5%)
 }
@@ -19,8 +20,14 @@ body {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 2;
-  height: 100vh;
-
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  background: linear-gradient(
+    to top left,
+    $color-primary-light,
+    $color-primary-dark
+  );
   background-repeat: no-repeat;
   @include flex-center;
 }

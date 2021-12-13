@@ -1,29 +1,21 @@
 .form {
   width: 60%;
-  height: 90%;
-  background: rgba($color-light, 0.6);
+  // background: rgba($color-light, 0.6);
+  background: linear-gradient(
+    to bottom right,
+    rgba($color-light, 0.3),
+    rgba($color-light, 0.7)
+  );
   border-radius: 10px;
   padding: 3rem;
   transition: all 0.2s;
-
   @include flex-center;
 
   @media only screen and (max-width: $bp-large) {
     width: 100%;
+    min-height: 100vh;
     height: 100%;
     border-radius: 0px;
-  }
-
-  &__background {
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(
-      to top left,
-      $color-primary-light,
-      $color-primary-dark
-    );
-    position: fixed;
-    z-index: -10;
   }
 
   &__items {
@@ -34,7 +26,7 @@
     &--header {
       width: 100%;
       min-width: max-content;
-      font-family: "Balsamiq Sans", cursive;
+      font-family: "Balsamiq Sans";
       font-size: 2.3rem;
       background: $color-light;
       border-radius: 4px;
@@ -80,7 +72,12 @@
       &:focus {
         background: rgba($color-light, 1);
         outline: none;
-        border: $color-primary 4px solid;
+      }
+      &:focus {
+        border: $color-valid 4px solid;
+      }
+      &:focus:invalid {
+        border: $color-invalid 4px solid;
       }
     }
   }
@@ -88,7 +85,7 @@
 
 .result {
   width: 25rem;
-  height: 7rem;
+  min-height: 7rem;
   background: $color-light;
   padding: 0.5rem 2rem;
   border-radius: 8px;
