@@ -10,6 +10,16 @@ const btnRefresh = document.querySelector(".refresh");
 const bmiCalculate = function (x, y) {
   result.textContent = (x / Math.pow(y / 100, 2)).toFixed(2);
   console.log(result.textContent);
+
+  // Controlling the input numbers
+  if (
+    height.value == "" ||
+    weight.value == "" ||
+    height.value <= 0 ||
+    weight.value <= 0
+  ) {
+    result.textContent = "قد و وزن خود را وارد کنید";
+  }
 };
 
 // Refreshes the values
@@ -25,9 +35,7 @@ btnCalculate.addEventListener("click", function () {
 });
 
 // Refresh Button
-btnRefresh.addEventListener("click", function () {
-  refresh();
-});
+btnRefresh.addEventListener("click", refresh);
 
 // Keyboard buttons
 document.addEventListener("keydown", function (e) {

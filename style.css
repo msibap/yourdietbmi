@@ -225,6 +225,7 @@ body {
   border-radius: 8px;
   text-align: center;
   margin: 1rem 0;
+  font-size: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
