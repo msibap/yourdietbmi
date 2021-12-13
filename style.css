@@ -64,6 +64,11 @@ body {
 }
 
 .btn {
+  -webkit-box-flex: 0.45;
+      -ms-flex-positive: 0.45;
+          flex-grow: 0.45;
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
   min-width: -webkit-max-content;
   min-width: -moz-max-content;
   min-width: max-content;
@@ -74,9 +79,9 @@ body {
   background: #fff;
   border-radius: 6px;
   padding: 1rem 2rem;
+  margin: 0.5rem 0;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
-  margin: 1rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -10,6 +10,8 @@
 }
 
 .btn {
+  flex-grow: 0.45;
+  flex-basis: 0;
   min-width: max-content;
   height: 4rem;
   border: none;
@@ -18,8 +20,9 @@
   background: $color-light;
   border-radius: 6px;
   padding: 1rem 2rem;
+  margin: 0.5rem 0;
   transition: all 0.2s ease-out;
-  margin: 1rem 0;
+
   @include flex-center;
 
   &:hover {
