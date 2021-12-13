@@ -4,12 +4,14 @@
   background: rgba($color-light, 0.6);
   border-radius: 10px;
   padding: 3rem;
+  transition: all 0.2s;
 
   @include flex-center;
 
   @media only screen and (max-width: $bp-large) {
     width: 100%;
     height: 100%;
+    border-radius: 10px;
   }
 
   &__items {
