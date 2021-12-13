@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap");
 @font-face {
   font-family: Yekan;
   src: url("font/Yekan.woff"), url("font/Yekan.woff");
@@ -23,12 +24,10 @@ html {
 
 body {
   font-family: Yekan;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   line-height: 2;
   height: 100vh;
-  background: -webkit-gradient(linear, right bottom, left top, from(#c4ff66), to(#5e9900));
-  background: linear-gradient(to top left, #c4ff66, #5e9900);
   background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -118,8 +117,17 @@ body {
   .form {
     width: 100%;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 0px;
   }
+}
+
+.form__background {
+  width: 100vw;
+  height: 100vh;
+  background: -webkit-gradient(linear, right bottom, left top, from(#c4ff66), to(#5e9900));
+  background: linear-gradient(to top left, #c4ff66, #5e9900);
+  position: fixed;
+  z-index: -10;
 }
 
 .form__items {
@@ -139,6 +147,9 @@ body {
 }
 
 .form__items--header {
+  width: 100%;
+  font-family: "Balsamiq Sans", cursive;
+  font-size: 2.3rem;
   min-width: -webkit-max-content;
   min-width: -moz-max-content;
   min-width: max-content;
@@ -146,6 +157,8 @@ body {
   border-radius: 4px;
   padding: 0.5rem 3rem;
   cursor: default;
+  margin: 1rem 0;
+  text-align: center;
 }
 
 .form__items--container {
@@ -162,13 +175,13 @@ body {
 }
 
 .form__items--label {
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 
 .form__items--input {
   width: 25rem;
   font-family: inherit;
-  font-size: 1.9rem;
+  font-size: 1.6rem;
   font-weight: inherit;
   text-align: right;
   border: transparent 4px solid;

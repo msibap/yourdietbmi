@@ -16,16 +16,11 @@ html {
 
 body {
   font-family: Yekan;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   line-height: 2;
   height: 100vh;
-  background: linear-gradient(
-    to top left,
-    $color-primary-light,
-    $color-primary-dark
-  );
-  background-repeat: no-repeat;
 
+  background-repeat: no-repeat;
   @include flex-center;
 }
