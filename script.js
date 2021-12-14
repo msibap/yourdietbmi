@@ -5,6 +5,9 @@ const weight = document.querySelector(".form__weight--input");
 const result = document.querySelector(".result");
 const btnCalculate = document.querySelector(".calculate");
 const btnRefresh = document.querySelector(".refresh");
+const btnDarkMode = document.querySelector(".btn--dark-toggle");
+const formBackground = document.querySelector(".form");
+const header = document.querySelector(".form__items--header");
 
 // Calculates BMI formula: x = weight, y = height
 const bmiCalculate = function (x, y) {
@@ -43,5 +46,21 @@ document.addEventListener("keydown", function (e) {
     bmiCalculate(weight.value, height.value);
   } else if (e.key == "Escape") {
     refresh();
+  }
+});
+
+btnDarkMode.addEventListener("click", function () {
+  formBackground.classList.toggle("dark-mode--bgn");
+  header.classList.toggle("dark-mode--form");
+  weight.classList.toggle("dark-mode--field");
+  height.classList.toggle("dark-mode--field");
+  result.classList.toggle("dark-mode--form");
+  btnCalculate.classList.toggle("dark-mode--btn");
+  btnRefresh.classList.toggle("dark-mode--btn");
+  btnDarkMode.classList.toggle("dark-mode--btn");
+  if (btnDarkMode.textContent == "DARK") {
+    btnDarkMode.textContent = "LIGHT";
+  } else {
+    btnDarkMode.textContent = "DARK";
   }
 });

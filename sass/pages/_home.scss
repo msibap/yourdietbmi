@@ -6,9 +6,11 @@
     rgba($color-light, 0.3),
     rgba($color-light, 0.7)
   );
+  color: black;
   border-radius: 10px;
   padding: 3rem;
   transition: all 0.2s;
+  position: relative;
   @include flex-center;
 
   @media only screen and (max-width: $bp-large) {
@@ -34,6 +36,7 @@
       cursor: default;
       margin: 1rem 0;
       text-align: center;
+      transition: all 0.2s;
     }
 
     &--container {
@@ -92,5 +95,39 @@
   text-align: center;
   margin: 1rem 0;
   font-size: 2rem;
+  transition: all 0.2s;
+
   @include flex-center;
+}
+
+.dark-mode {
+  &--bgn {
+    background: linear-gradient(to bottom right, #333, #111) !important;
+    color: #eee !important;
+  }
+
+  &--form {
+    background: #333 !important;
+    color: #eee !important;
+  }
+
+  &--field {
+    background: #333 !important;
+    color: #fff;
+    &::placeholder {
+      color: #ccc !important;
+    }
+    &:hover,
+    &:active {
+      background: #444 !important;
+    }
+  }
+
+  &--btn {
+    background: #333 !important;
+    color: #eee !important;
+    &:hover {
+      background: $color-primary-dark !important;
+    }
+  }
 }

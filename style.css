@@ -79,7 +79,7 @@ body {
   min-width: max-content;
   height: 4rem;
   border: none;
-  font-family: inherit;
+  font-family: "Balsamiq Sans";
   font-size: 1.9rem;
   background: #fff;
   border-radius: 6px;
@@ -104,14 +104,22 @@ body {
   cursor: pointer;
 }
 
+.btn--dark-toggle {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
 .form {
   width: 60%;
   background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.7)));
   background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.7));
+  color: black;
   border-radius: 10px;
   padding: 3rem;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -161,6 +169,8 @@ body {
   cursor: default;
   margin: 1rem 0;
   text-align: center;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .form__items--container {
@@ -210,7 +220,7 @@ body {
 }
 
 .form__items--input:focus {
-  border: #9dff00 4px solid;
+  border: green 4px solid;
 }
 
 .form__items--input:focus:invalid {
@@ -226,6 +236,8 @@ body {
   text-align: center;
   margin: 1rem 0;
   font-size: 2rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -235,5 +247,50 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.dark-mode--bgn {
+  background: -webkit-gradient(linear, left top, right bottom, from(#333), to(#111)) !important;
+  background: linear-gradient(to bottom right, #333, #111) !important;
+  color: #eee !important;
+}
+
+.dark-mode--form {
+  background: #333 !important;
+  color: #eee !important;
+}
+
+.dark-mode--field {
+  background: #333 !important;
+  color: #fff;
+}
+
+.dark-mode--field::-webkit-input-placeholder {
+  color: #ccc !important;
+}
+
+.dark-mode--field:-ms-input-placeholder {
+  color: #ccc !important;
+}
+
+.dark-mode--field::-ms-input-placeholder {
+  color: #ccc !important;
+}
+
+.dark-mode--field::placeholder {
+  color: #ccc !important;
+}
+
+.dark-mode--field:hover, .dark-mode--field:active {
+  background: #444 !important;
+}
+
+.dark-mode--btn {
+  background: #333 !important;
+  color: #eee !important;
+}
+
+.dark-mode--btn:hover {
+  background: #5e9900 !important;
 }
 /*# sourceMappingURL=style.css.map */

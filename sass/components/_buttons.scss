@@ -15,7 +15,7 @@
   min-width: max-content;
   height: 4rem;
   border: none;
-  font-family: inherit;
+  font-family: "Balsamiq Sans";
   font-size: 1.9rem;
   background: $color-light;
   border-radius: 6px;
@@ -29,5 +29,11 @@
     background: $color-primary-dark;
     color: $color-light;
     cursor: pointer;
+  }
+
+  &--dark-toggle {
+    position: absolute;
+    top: 10px;
+    left: 20px;
   }
 }

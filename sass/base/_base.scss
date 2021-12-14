@@ -29,5 +29,6 @@ body {
     $color-primary-dark
   );
   background-repeat: no-repeat;
+
   @include flex-center;
 }
